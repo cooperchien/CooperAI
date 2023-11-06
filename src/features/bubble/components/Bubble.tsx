@@ -31,7 +31,7 @@ export const Bubble = (props: BubbleProps) => {
             <BubbleButton {...bubbleProps.theme?.button} toggleBot={toggleBot} isBotOpened={isBotOpened()} />
             <div
                 part='bot'
-                style={{
+               /* style={{
                     height: bubbleProps.theme?.chatWindow?.height ? `${bubbleProps.theme?.chatWindow?.height.toString()}px` : 'calc(100% - 100px)',
                     transition: 'transform 200ms cubic-bezier(0, 1.2, 1, 1), opacity 150ms ease-out',
                     'transform-origin': 'bottom right',
@@ -39,7 +39,7 @@ export const Bubble = (props: BubbleProps) => {
                     'box-shadow': 'rgb(0 0 0 / 16%) 0px 5px 40px',
                     'background-color': bubbleProps.theme?.chatWindow?.backgroundColor || '#ffffff',
                     'z-index': 42424242
-                }}
+                }} */
                 class={
                     `fixed sm:right-5 rounded-lg w-full sm:w-[400px] max-h-[704px]` +
                     (isBotOpened() ? ' opacity-1' : ' opacity-0 pointer-events-none') +
