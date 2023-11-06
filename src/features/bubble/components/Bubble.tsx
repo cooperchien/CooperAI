@@ -40,6 +40,8 @@ export const Bubble = (props: BubbleProps) => {
                     'background-color': bubbleProps.theme?.chatWindow?.backgroundColor || '#ffffff',
                     'z-index': 42424242
                 }} */
+
+        style={{color:"red"}}
                 class={
                     `fixed sm:right-5 rounded-lg w-full sm:w-[400px] max-h-[704px]` +
                     (isBotOpened() ? ' opacity-1' : ' opacity-0 pointer-events-none') +
