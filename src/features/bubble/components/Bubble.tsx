@@ -41,7 +41,7 @@ export const Bubble = (props: BubbleProps) => {
                     'z-index': 42424242
                 }} */
 
-        style={{color:"red"}}
+        style={{"text-align":"center"}}
                 class={
                     `fixed sm:right-5 rounded-lg w-full sm:w-[400px] max-h-[704px]` +
                     (isBotOpened() ? ' opacity-1' : ' opacity-0 pointer-events-none') +
